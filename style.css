@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Poiret one';
+}
+
+
+#wrapper{
+	position: relative;
+	height: 100vh;
+	background-color: #e0e0eb;
+}
+
+
+
+
+
+
+
+
+#container {
+	width: 30%;
+	margin: 0 auto;
+	padding: 5%;
+	position: relative;
+
+}
+
+
+
+#midCont, .midCont2 {
+	width: 80%;
+	height: 3px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	position: absolute;
+	border-radius: 50%;
+	left: 0; 
+	right: 0; 
+	bottom: 50%;
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.midCont2 {
+	background: #c1c1c1;
+}
+
+#toLeft, #toRight {
+	width: 0;
+	background: #c1c1c1;
+	position: absolute;
+	height: 100%;
+}
+
+#toLeft {
+	right: 50%;
+	border-top-left-radius:  50%;
+	border-bottom-left-radius:  50%;
+}
+
+#toRight {
+	left: 50%;
+	border-top-right-radius:  50%;
+	border-bottom-right-radius:  50%;
+}
+
+.containerText {
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	left: 0; 
+	right: 0; 
+	top: 10%;
+	margin-left: auto; 
+	margin-right: auto; 
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+.someText {
+	line-height: 150%;
+	font-size: 1.3em;
+	letter-spacing: 5px;
+	display: none;
+	position: relative;
+	height: 100%;
+}
+
+
+#first {
+	margin-left: -10%;
+}
+#second {
+	margin-right: -10%;
+	text-align: right;
+}
+#last {
+	text-align: center;
+}
+
+
+#test {
+	width: 100%;
+	position: absolute;
+	top: 300px;
+}
