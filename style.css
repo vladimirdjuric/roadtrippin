@@ -7,13 +7,13 @@ body {
 
 #wrapper {
 	width: 100%;
-	background-color: #000;
+	height: 2000px;
 }
 
 #landing {
 	width: 100%;
 	height: 100vh;
-	background-image: url(https://s22.postimg.cc/m2emo06o1/landing_back.jpg);
+	background-image: url(img/landing_back.jpg);
 	background-size: cover;
 }
 
@@ -31,6 +31,7 @@ nav {
 	height: 70px;
 	background-color: #fff;
 	padding: 10px;
+	box-shadow: 5px 5px 20px #f1f1f1;
 }
 
 nav ul {
@@ -46,12 +47,14 @@ nav ul {
 
 nav ul li {
 	font-size: 1.1em;
+	margin: 5px 20px 5px 20px;
 }
 
 nav ul li a {
 	color: #000;
 	text-decoration: none;
 	transition: color 0.3s;
+	display: block;
 }
 
 nav ul li a:hover {
@@ -65,14 +68,41 @@ nav ul li a:hover {
 	margin: 0 auto;
 	margin-top: 100px;
 	padding: 20px;
-	transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.7s, color 0.7s;
 	color: #fff;
 	text-align: center;
 	letter-spacing: 5px;
 }
 
 .landingButton:hover {
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: #f1f1f1;
 	color: #000;
 	cursor: pointer;
 }
+
+#dropdown {
+	display: none;
+	width: 120px;
+	color: #fff;
+	background-color: #000;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 15px 0px 10px 0px;
+	position: absolute;
+}
+
+
+.dropdownContent {
+	width: 100%;
+	text-align: left;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	font-size: 0.85em;
+
+}
+
+.dropdownContent a {
+	color: #fff;
+	width: 100%;
+}
+
