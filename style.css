@@ -1,108 +1,150 @@
 body {
 	box-sizing: border-box;
-	margin: 0;
+	margin: 0px;
 	padding: 0px;
 	font-family: 'Sunflower', sans-serif;
 }
 
 #wrapper {
 	width: 100%;
-	height: 2000px;
+	height: 4000px;
 }
 
 #landing {
-	width: 100%;
-	height: 100vh;
 	background-image: url(https://s22.postimg.cc/m2emo06o1/landing_back.jpg);
 	background-size: cover;
-}
-
-#landingLogo {
-	width: 700px;
-	margin: 0 auto;
-	margin-top: 200px;
-}
-#landingLogo img {
-	width: 100%;
+	height: 100vh;
 }
 
 nav {
+	position: fixed;
+	padding: 15px;
 	width: 100%;
-	height: 70px;
-	background-color: #fff;
-	padding: 10px;
-	box-shadow: 5px 5px 20px #f1f1f1;
+	display: grid;
+	grid-template-columns: 30% 70%;
+	z-index: 999;
+	transition: all 0.3s ease;
+}
+.addNav {
+	background-color: rgba(255,255,255, 0.1);
+	padding: 0px;
 }
 
 nav ul {
-	width: 70%;
+	width: 85%;
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	margin: 0 auto;
-	margin-top: 10px;
-	text-align: center;
-	padding: 10px;
+    transition: all 0.3s;
+}
+.navUl {
+	width: 100%;
+	font-size: 0.75em;
 }
 
 nav ul li {
-	font-size: 1.1em;
-	margin: 5px 20px 5px 20px;
+    transition: all 0.3s;
 }
 
 nav ul li a {
-	color: #000;
 	text-decoration: none;
-	transition: color 0.3s;
-	display: block;
+	color: rgba(250, 250, 250, 0.9);
+	font-size: 1.25em;
+	letter-spacing: 1px;
+	transition: all 0.2s;
+	text-shadow: 2px 2px 2px #000;
 }
 
-nav ul li a:hover {
-	color: #b36b00;
+nav ul li a:hover, #follow:hover, .dropdownContent a:hover {
+	color: #ffc266;
 }
 
-.landingButton {
-	width: 150px;
-	height: 15px;
+#logo {
+	width: 50%;
+	padding: 10px;
+}
+
+#logoContent {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	cursor: pointer;
+	/* delete later */
+	text-align: center;
+	font-size: 1.3em;
+	color: white;
+}
+
+#midLogo {
+	position: absolute; 
+  	left: 0; 
+  	right: 0; 
+  	top: 30%;
+ 	margin-left: auto; 
+  	margin-right: auto; 
+  	width: 55%;
+}
+
+#midLogo img {
+	width: 100%;
+}
+
+#landingButton {
+	width: 15%;
 	border: 2px solid #fff;
-	margin: 0 auto;
-	margin-top: 100px;
-	padding: 20px;
-	transition: background-color 0.7s, color 0.7s;
 	color: #fff;
+	padding: 15px 20px 15px 20px;
+	transition: background-color 0.7s, color 0.7s;
 	text-align: center;
 	letter-spacing: 5px;
+	position: absolute; 
+  	left: 0; 
+  	right: 0; 
+  	top: 60%;
+ 	margin-left: auto; 
+  	margin-right: auto; 
 }
 
-.landingButton:hover {
+#landingButton:hover {
 	background-color: #f1f1f1;
 	color: #000;
 	cursor: pointer;
 }
 
-#dropdown {
+.dropdown {
 	display: none;
-	width: 120px;
-	color: #fff;
-	background-color: #000;
-	margin: 0 auto;
-	margin-top: 20px;
-	padding: 15px 0px 10px 0px;
-	position: absolute;
+	position: fixed;
+	text-align: right;
+	right: 10%;
+	transition: all 0.3s;
+}
+.addDropdown {
+	display: none;
+	position: fixed;
+	text-align: right;
+	right: 3%;
+	margin-top: 0;
 }
 
-
 .dropdownContent {
-	width: 100%;
-	text-align: left;
-	padding-left: 20px;
-	padding-bottom: 10px;
-	font-size: 0.85em;
-
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1em;
+	padding: 10px;
+	transition: all 0.3s;
+}
+.addDropdownContent{
+	font-size: 0.75em;
 }
 
 .dropdownContent a {
+	text-decoration: none;
 	color: #fff;
-	width: 100%;
 }
+.dropdownContent a:hover {
+	text-decoration: underline;
+}
+
+
 
