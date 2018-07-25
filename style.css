@@ -25,10 +25,6 @@ nav {
 	transition: all 0.3s ease;
 	background-color: rgba(255,255,255, 0.2);
 }
-.addNav {
-	background-color: rgba(255,255,255, 0.1);
-	padding: 0px;
-}
 
 nav ul {
 	width: 85%;
@@ -36,10 +32,6 @@ nav ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     	transition: all 0.3s;
-}
-.navUl {
-	width: 100%;
-	font-size: 0.75em;
 }
 
 nav ul li {
