@@ -22,20 +22,18 @@ nav {
 	display: grid;
 	grid-template-columns: 30% 70%;
 	z-index: 999;
-	transition: all 0.3s ease;
 	background-color: rgba(255,255,255, 0.2);
+	padding: 0px;
 }
 
 nav ul {
-	width: 85%;
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    	transition: all 0.3s;
 }
 
 nav ul li {
-    	transition: all 0.3s;
+    /*transition: all 0.3s;*/
 }
 
 nav ul li a {
@@ -43,7 +41,7 @@ nav ul li a {
 	color: #fff;
 	font-size: 1em;
 	letter-spacing: 1px;
-	transition: all 0.2s;
+	/*transition: all 0.2s;*/
 }
 
 nav ul li a:hover, #follow:hover, .dropdownContent a:hover {
@@ -53,56 +51,61 @@ nav ul li a:hover, #follow:hover, .dropdownContent a:hover {
 #logo {
 	width: 50%;
 	padding: 10px;
-	background-color: black;
+	margin-left: 50px;
 }
 
 #logoContent {
-	display: none;
 	width: 100%;
-	height: 100%;
-	background-color: black;
 	cursor: pointer;
 	/* delete later */
 	text-align: center;
 	font-size: 1.3em;
 	color: white;
 }
+#logoContent img {
+	width: 100%;
+}
 
 
-
-.dropdown {
+#dropdown {
 	display: none;
 	position: fixed;
 	text-align: right;
-	right: 10%;
-	transition: all 0.3s;
+	right: 5%;
+	padding-top: 30px;
 }
-.addDropdown {
-	display: none;
-	position: fixed;
-	text-align: right;
-	right: 3%;
-	margin-top: 0;
-}
+
 
 .dropdownContent {
 	display: inline-block;
-	text-decoration: none;
-	font-size: 1em;
-	padding: 10px;
-	transition: all 0.3s;
-}
-.addDropdownContent{
-	font-size: 0.75em;
+	padding: 5px;
+	font-size: 0.9em;
 }
 
+
+
 .dropdownContent a {
-	text-decoration: none;
 	color: #fff;
+	text-decoration: none;
 }
 .dropdownContent a:hover {
 	text-decoration: underline;
 }
 
 
+/* END OF NAVIGATION */
+
+
+#midText {
+	display: none;
+	width: 350px;
+	background-color:rgba(255, 255, 255, 0.1);
+	text-align: justify;
+	position: absolute;
+	top: 30%;
+	right: 2%;
+	padding: 20px;
+	font-size: 0.9em;
+	color: #fff;
+}
 
