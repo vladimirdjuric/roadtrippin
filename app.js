@@ -32,7 +32,7 @@ $(window).on('scroll', function(){
 		dropdown.css('top', navHeight*0.8);
 		$('.dropdownContent').addClass('addDropdownContent');
 		//logo.animate({width: '50%'}, 30);
-		logoContent.fadeIn(300);
+		
 		navigation.addClass('addNav');
 	}else{
 		$('nav ul').removeClass('navUl');
@@ -40,7 +40,7 @@ $(window).on('scroll', function(){
 		dropdown.css('top', navHeight + navHeight * 0.2);
 		$('.dropdownContent').removeClass('addDropdownContent');
 		//logo.animate({width: '0px'}, 30);
-		logoContent.fadeOut(300);
+		
 		navigation.removeClass('addNav');
 	}
 })
