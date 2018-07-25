@@ -89,6 +89,7 @@ nav ul li a:hover, #follow:hover, .dropdownContent a:hover {
 	text-decoration: none;
 }
 .dropdownContent a:hover {
+	color: #fff;
 	text-decoration: underline;
 }
 
