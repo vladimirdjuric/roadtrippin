@@ -1,49 +1,21 @@
 $(document).ready(function(){
 
-// display social media dropdown
-
-let navigation = $('nav');
+//set position of dropdown
+let navHeight = parseInt($('nav').css('height'));
 let dropdown = $('#dropdown');
-let navHeight = navigation.height();
-let logoContent = $('#logoContent');
+dropdown.css('top', navHeight/1.5);
 
-dropdown.css('top', navHeight + navHeight * 0.2);
+$('#follow').hover(() => {
+	dropdown.css('display', 'block');
+}, () => {
+	dropdown.css('display', 'none');
+}, 1000)
 
-
-let active = true;
-$('#follow').on('click', function(e){
-	active = !active;
-	if(active === false) {
-		dropdown.css('display', 'block');
-	}else {
-		dropdown.css('display', 'none');
-
-	}
-});
+//mid text fade in
+$('#midText').fadeIn(4000)
 
 
 
-// change nav size on scroll
-
-$(window).on('scroll', function(){
-	if($(window).scrollTop() > 60){
-		$('nav ul').addClass('navUl');
-		dropdown.addClass('addDropdown');
-		dropdown.css('top', navHeight*0.8);
-		$('.dropdownContent').addClass('addDropdownContent');
-		//logo.animate({width: '50%'}, 30);
-		
-		navigation.addClass('addNav');
-	}else{
-		$('nav ul').removeClass('navUl');
-		dropdown.removeClass('addDropdown');
-		dropdown.css('top', navHeight + navHeight * 0.2);
-		$('.dropdownContent').removeClass('addDropdownContent');
-		//logo.animate({width: '0px'}, 30);
-		
-		navigation.removeClass('addNav');
-	}
-})
 
 
 
