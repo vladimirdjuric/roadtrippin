@@ -11,14 +11,13 @@ body {
 }
 
 #landing {
-	background-image: url(https://s22.postimg.cc/m2emo06o1/landing_back.jpg);
+	background-image: url(https://s33.postimg.cc/v4raijlxr/Copy_of_D5_S_3787.jpg);
 	background-size: cover;
 	height: 100vh;
 }
 
 nav {
 	position: fixed;
-	padding: 15px;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 30% 70%;
@@ -90,27 +89,8 @@ nav ul li a:hover, #follow:hover, .dropdownContent a:hover {
 	width: 100%;
 }
 
-#landingButton {
-	width: 15%;
-	border: 2px solid #fff;
-	color: #fff;
-	padding: 15px 20px 15px 20px;
-	transition: background-color 0.7s, color 0.7s;
-	text-align: center;
-	letter-spacing: 5px;
-	position: absolute; 
-  	left: 0; 
-  	right: 0; 
-  	top: 60%;
- 	margin-left: auto; 
-  	margin-right: auto; 
-}
 
-#landingButton:hover {
-	background-color: #f1f1f1;
-	color: #000;
-	cursor: pointer;
-}
+
 
 .dropdown {
 	display: none;
