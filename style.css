@@ -1,112 +1,13 @@
-body {
+* {
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Sunflower', sans-serif;
 }
 
-#wrapper {
-	width: 100%;
-	height: 4000px;
+#wrapper div {
+	font-size: 5em;
+	margin: 0 auto;
+	color: pink;
+	margin-top: 200px;
 }
-
-#landing {
-	background-image: url(https://s33.postimg.cc/v4raijlxr/Copy_of_D5_S_3787.jpg);
-	background-size: cover;
-	height: 100vh;
-}
-
-nav {
-	position: fixed;
-	width: 100%;
-	display: grid;
-	grid-template-columns: 30% 70%;
-	z-index: 999;
-	background-color: rgba(255,255,255, 0.2);
-	padding: 0px;
-}
-
-nav ul {
-	list-style-type: none;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-nav ul li {
-    /*transition: all 0.3s;*/
-}
-
-nav ul li a {
-	text-decoration: none;
-	color: #fff;
-	font-size: 1em;
-	letter-spacing: 1px;
-	/*transition: all 0.2s;*/
-}
-
-nav ul li a:hover, #follow:hover, .dropdownContent a:hover {
-	color: #000;
-}
-
-#logo {
-	width: 50%;
-	padding: 10px;
-	margin-left: 50px;
-}
-
-#logoContent {
-	width: 100%;
-	cursor: pointer;
-	/* delete later */
-	text-align: center;
-	font-size: 1.3em;
-	color: white;
-}
-#logoContent img {
-	width: 100%;
-}
-
-
-#dropdown {
-	display: none;
-	position: fixed;
-	text-align: right;
-	right: 5%;
-	padding-top: 30px;
-}
-
-
-.dropdownContent {
-	display: inline-block;
-	padding: 5px;
-	font-size: 0.9em;
-}
-
-
-
-.dropdownContent a {
-	color: #fff;
-	text-decoration: none;
-}
-.dropdownContent a:hover {
-	color: #fff;
-	text-decoration: underline;
-}
-
-
-/* END OF NAVIGATION */
-
-
-#midText {
-	display: none;
-	width: 350px;
-	background-color:rgba(255, 255, 255, 0.1);
-	text-align: justify;
-	position: absolute;
-	top: 30%;
-	right: 2%;
-	padding: 20px;
-	font-size: 0.9em;
-	color: #fff;
-}
-
