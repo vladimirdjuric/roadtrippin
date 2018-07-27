@@ -99,8 +99,9 @@ nav ul li a:hover {
 #midLogo {
 	display: none;
 	position: absolute;
+	bottom: -6px;
 	width: 20%;
-	padding: 10px;
+	left: 10px;
 }
 #midLogo img {
 	width: 100%;
